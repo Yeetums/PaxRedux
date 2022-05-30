@@ -1,0 +1,37 @@
+
+ideas = {
+
+
+	country = {
+ NH_spread_ing_soc = {
+	 allowed = {
+	  always = no
+	 }
+	 allowed_civil_war = {
+			always = yes
+	 }
+		picture = PB_ENG_Land_of_Hope
+		removal_cost = -1
+		modifier = {
+		   weekly_stability = 0.02
+			 ss_drift = 0.02
+			 jc_drift = 0.02
+		}
+	}
+		NH_support_from_britain_foreign = {
+ 	 allowed = {
+ 	  always = no
+ 	 }
+ 	 allowed_civil_war = {
+ 			always = yes
+ 	 }
+ 		picture = PB_ENG_Land_of_Hope
+ 		removal_cost = -1
+ 		modifier = {
+		 army_attack_factor = 0.05
+	   army_defence_factor = 0.05
+  	 army_org_factor = 0.05
+ 		}
+ 	}
+}
+}

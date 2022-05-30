@@ -1,0 +1,60 @@
+defined_text = { #MILITARY MODERNIZATION LEVEL TOOLTIP
+    name = nh_get_powerstruggle
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { NH_ENG_WUP_powerstruggle = 0 }
+                check_variable = { NH_ENG_WUP_powerstruggle = 1 }
+                check_variable = { NH_ENG_WUP_powerstruggle = -1 }
+            }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_Neutral"
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { NH_ENG_WUP_powerstruggle = 2 }
+                check_variable = { NH_ENG_WUP_powerstruggle = 3 }
+            }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_Moderate_Reform"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { NH_ENG_WUP_powerstruggle = 4 }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_Strong_Reform"
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { NH_ENG_WUP_powerstruggle = -2 }
+                check_variable = { NH_ENG_WUP_powerstruggle = -3 }
+            }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_Moderate_Conservative"
+    }
+
+    text = {
+        trigger = {
+            check_variable = { NH_ENG_WUP_powerstruggle = -4 }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_Strong_Conservative"
+    }
+    text = {
+        trigger = {
+            check_variable = { NH_ENG_WUP_powerstruggle > 100 }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_utopianwon"
+    }
+    text = {
+        trigger = {
+            check_variable = { NH_ENG_WUP_powerstruggle < -100 }
+        }
+        localization_key = "NH_ENG_WUP_powerstruggle_pragmatistwon"
+    }
+}

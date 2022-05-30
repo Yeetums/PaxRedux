@@ -1,0 +1,1303 @@
+﻿capital = 126
+
+oob = "ENG_1933"
+
+starting_train_buffer = 2
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ENG_1933_Naval"
+	else = {
+		set_naval_oob = "ENG_1933_Naval_Legacy"
+	}
+}
+
+add_to_variable = {
+	var = PB_MegaLondon_Population_Monthly
+	value = 0.04
+}
+add_to_variable = {
+	var = PB_MegaLondon_ProductionMaxEfficiency
+	value = 0.06
+}
+add_to_variable = {
+	var = PB_MegaLondon_ic_factory
+	value = 0.05
+}
+add_to_variable = {
+	var = PB_MegaLondon_ProductionEfficiencyGain
+	value = 0.08
+}
+
+
+set_variable = { var = ENG_HaigTory_Support value = 70 }
+set_variable = { var = ENG_ProgCon_Support value = 60 }
+set_variable = { var = ENG_Liberal_Support value = 60 }
+set_variable = { var = ENG_PragWUP_Support value = 10 }
+set_variable = { var = ENG_UtopWUP_Support value = 0 }
+set_variable = { var = ENG_NPP_Support value = 10 }
+
+set_variable = { var = ENG_Empire_Outlook value = 0 }
+
+set_variable = { var = NH_ENG_WUP_powerstruggle value = 0 }
+
+PB_Set_Max_State_Focus = yes
+set_country_flag = PB_content_country
+
+#coalition stuff
+
+add_to_farleft_coalition_jc = yes
+add_to_farleft_coalition_ss = yes
+add_to_right_coalition_an = yes
+add_to_right_coalition_rc = yes
+add_to_right_coalition_cn = yes
+add_to_right_coalition_lb = yes
+add_to_leading_coalition_cn = yes
+
+set_research_slots = 4
+
+create_intelligence_agency = {
+	name = "Imperial Intelligence Service"
+}
+
+# Starting tech
+set_technology = {
+	tech_automat_great_war = 1
+	basic_train = 1
+	infantry_rations = 1
+	infantry_weapons1930 = 1
+	infantry_weapons1933 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	tech_special_forces = 1
+	special_forces_power_armor = 1
+	special_forces_razor_girls = 1
+
+	infantry_drugs = 1
+
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = ImpConf_research
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+
+	set_autonomy = {
+		target = AME
+		autonomous_state = autonomy_constituent_commonwealth
+		freedom_level = 0.80
+	}
+
+	set_autonomy = {
+		target = ACD
+		autonomous_state = autonomy_constituent_commonwealth
+		freedom_level = 0.65
+	}
+
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_constituent_commonwealth
+		freedom_level = 0.75
+	}
+
+	set_autonomy = {
+		target = QUE
+		autonomous_state = autonomy_constituent_commonwealth
+		freedom_level = 0.75
+	}
+
+	set_autonomy = {
+		target = VIC
+		autonomous_state = autonomy_constituent_commonwealth
+		freedom_level = 0.75
+	}
+
+	set_autonomy = {
+		target = BFE
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.60
+	}
+
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.51
+	}
+
+	set_autonomy = {
+		target = BCL
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = BAF
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = BEF
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = HNK
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = SNG
+		autonomous_state = autonomy_constituent_dominion
+		freedom_level = 0.45
+	}
+
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_client_state
+		freedom_level = 0.50
+	}
+
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_client_state
+		freedom_level = 0.80
+	}
+
+	set_autonomy = {
+		target = MDR
+		autonomous_state = autonomy_client_state
+		freedom_level = 0.80
+	}
+
+	else = {
+		puppet = BAF
+		puppet = BCL
+		puppet = BFE
+		puppet = NZL
+		puppet = RAJ
+		puppet = ACD
+		puppet = AME
+		puppet = IRE
+		puppet = QUE
+		puppet = VIC
+		puppet = TUN
+		puppet = MDR
+		puppet = HNK
+		puppet = SNG
+	}
+}
+
+ENG = {
+	add_opinion_modifier = {
+		target = FRA modifier = great_war_bitterness
+	}
+
+	add_opinion_modifier = {
+		target = RUS modifier = great_war_bitterness
+	}
+
+	add_opinion_modifier = {
+		target = GER modifier = great_war_allies
+	}
+}
+
+add_ideas = {
+	PB_ENG_Land_of_Hope
+	PB_ENG_Postwar_Pacifism
+	PB_ENG_Economic_Stagnation
+	PB_ENG_Overconfident_Staff
+    PB_CHI_Extraterritorial_Dividends
+	PB_ENG_Imperial_Confederation_Head
+
+	PB_NI_British_Exceptionalism
+
+	ENG_PB_Douglas_Haig_HOG
+	ENG_PB_Tom_Horabin_ECM
+	ENG_PB_Neville_Chamberlain_FAM
+	ENG_PB_John_Simon_IAM
+
+	PB_Universal_Citizenship
+	PB_Free_Press
+	PB_Public_Meetings_Allowed
+	PB_Trade_Unions_All_Allowed
+	PB_Limited_Autonomy
+	PB_Full_Womens_Equality
+	PB_Law_Standard_Policing
+	PB_14_Hour_Workday
+	PB_Basic_Education
+	PB_Basic_Welfare
+	PB_Basic_Healthcare
+	PB_Slavery_Abolished
+	PB_Significant_Poverty
+	PB_Industrialized
+	PB_Minor_Illiteracy
+	PB_Stagnating_Growth
+
+	PB_Fully_Westernized
+	PB_Parliamentary_Monarchy
+	PB_Govidea_Free_Market_Capitalism
+	PB_Great_War_Military
+
+	PB_ENG_Vickers_Armstrongs
+	PB_ENG_John_Brown_Company
+}
+
+set_stability = 0.6
+set_war_support = 0.5
+
+set_convoys = 250
+
+create_faction = BER
+
+ENG = {
+	add_to_faction = SWK
+}
+
+set_politics = {
+	ruling_party = cn
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	ni = 3
+	ds = 3
+	rc = 18
+	cn = 45
+	lb = 8
+	an = 3
+	ss = 18
+	jc = 2
+}
+
+SNG = {
+	set_politics = {
+		ruling_party = cn
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+    set_popularities = {
+		ni = 4
+		ds = 0
+		rc = 0
+		cn = 46
+		lb = 25
+		an = 0
+		ss = 20
+		jc = 5
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+MDR = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 0
+        ds = 80
+        rc = 10
+        cn = 10
+        lb = 0
+        an = 0
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+AME = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 1
+        ds = 2
+        rc = 2
+        cn = 49
+        lb = 32
+        an = 3
+        ss = 10
+        jc = 1
+    }
+}
+BAF = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 12
+        ds = 55
+        rc = 29
+        cn = 2
+        lb = 0
+        an = 2
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+BEF = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 0
+        ds = 40
+        rc = 0
+        cn = 25
+        lb = 35
+        an = 0
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_American_Economic_Sphere
+	}
+}
+
+BCL = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 3
+        ds = 26
+        rc = 5
+        cn = 45
+        lb = 12
+        an = 3
+        ss = 3
+        jc = 3
+    }
+
+	add_ideas = {
+		ENG_American_Economic_Sphere
+	}
+}
+
+BFE = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 20
+        ds = 43
+        rc = 29
+        cn = 6
+        lb = 0
+        an = 2
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+IRE = {
+    set_politics = {
+        ruling_party = lb
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 5
+        ds = 6
+        rc = 19
+        cn = 29
+        lb = 25
+        an = 2
+        ss = 10
+        jc = 4
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+NZL = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 9
+        ds = 30
+        rc = 12
+        cn = 39
+        lb = 6
+        an = 1
+        ss = 2
+        jc = 1
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+QUE = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 3
+        ds = 2
+        rc = 13
+        cn = 29
+        lb = 25
+        an = 5
+        ss = 20
+        jc = 3
+    }
+
+	add_ideas = {
+		ENG_American_Economic_Sphere
+	}
+}
+
+VIC = {
+    set_politics = {
+        ruling_party = ss
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 19
+        ds = 12
+        rc = 19
+        cn = 20
+        lb = 0
+        an = 0
+        ss = 30
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+EGY = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 16
+        ds = 19
+        rc = 0
+        cn = 59
+        lb = 3
+        an = 0
+        ss = 3
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+RAJ = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 15
+        ds = 62
+        rc = 9
+        cn = 4
+        lb = 10
+        an = 0
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_British_Economic_Sphere
+	}
+}
+
+MIS = {
+    set_politics = {
+        ruling_party = cn
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 5
+        ds = 26
+        rc = 0
+        cn = 49
+        lb = 5
+        an = 15
+        ss = 0
+        jc = 0
+    }
+
+	add_ideas = {
+		ENG_American_Economic_Sphere
+	}
+}
+
+ACD = {
+    set_politics = {
+        ruling_party = ds
+        last_election = "1936.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+
+    set_popularities = {
+        ni = 0
+        ds = 4
+        rc = 45
+        cn = 19
+        lb = 20
+        an = 2
+        ss = 8
+        jc = 2
+    }
+
+	add_ideas = {
+		ENG_American_Economic_Sphere
+	}
+}
+
+# CHARACTERS
+recruit_character = ENG_Alan_Brooke
+recruit_character = ENG_JFC_Fuller
+recruit_character = ENG_Edmund_Allenby
+recruit_character = ENG_Bernard_Montgomery
+recruit_character = ENG_William_Slim
+recruit_character = ENG_Andrew_Cunningham
+recruit_character = ENG_Arthur_Harris
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = NI_VARIANT_01
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = DS_VARIANT_01
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = RC_VARIANT_01
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = CN_VARIANT_01
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = LB_VARIANT_01
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = SS_VARIANT_03
+}
+
+create_country_leader = {
+	name = "HRM George V"
+	desc = "ENG_King_George_Desc"
+	picture = "Portrait_ENG_George_V.dds"
+	ideology = JC_VARIANT_UTOPIA
+}
+
+create_corps_commander = {
+	name = "Harold Alexander"
+	picture = "Portrait_Britain_Harold_Alexander.dds"
+	traits = { career_officer harsh_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "George Milne"
+	picture = "Portrait_ENG_George_Milne.dds"
+	traits = { old_guard bearer_of_artillery }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Claude Auchinleck"
+	picture = "Portrait_ENG_Claude_Auchinleck.dds"
+	traits = { inflexible_strategist trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Arthur MacArthur III"
+	picture = "Portrait_ENG_lolscottishmacarthur.dds"
+	traits = { Iberian_Front_Veteran egotist cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Archibald Wavell"
+	picture = "Portrait_ENG_Archibald_Wavell.dds"
+	traits = { trait_reckless infantry_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ernest king"
+	desc = "PB_Ernest_king_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_Ernest_King.dds"
+	traits = {
+		bold
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "William Leahy"
+	desc = "PB_William_Leahy_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_William_Leahy.dds"
+	traits = {
+		blockade_runner
+	}
+	skill = 4
+	attack_skill = 1
+	defense_skill = 5
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "William F. Halsey"
+	desc = "PB_William_Halsey_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_William_Halsey.dds"
+	traits = {
+		aviation_enthusiast
+		superior_tactician
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "William G. Andrewes"
+	desc = "PB_William_Andrewes_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_William_Andrewes.dds"
+	traits = {
+		trait_reckless
+		seawolf
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "William G. Tennant"
+	desc = "PB_William_Tennant_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_William_Tennant.dds"
+	traits = {
+		gunnery_expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Bertram H. Ramsay"
+	desc = "PB_Bertram_Ramsay_Desc"
+	portrait_path = "gfx/leaders/ENG/Portrait_ENG_Bertram_Ramsay.dds"
+	traits = {
+		navy_career_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Valentine Vivian"
+		GFX = GFX_Portrait_ENG_Valentine_Vivian
+		traits = { operative_master_interrogator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Ian Fleming"
+		GFX = GFX_Portrait_ENG_Ian_Fleming
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Virginia Hall"
+		GFX = GFX_Portrait_ENG_Virginia_Hall
+		traits = { operative_razormaiden }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Ralph Izzard"
+		GFX = GFX_Portrait_ENG_Ralph_Izzard
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Harold Philby"
+		GFX = GFX_Portrait_ENG_Harold_Philby
+		traits = { operative_double_agent }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Julia Carolyn Child"
+		GFX = GFX_Portrait_ENG_Julia_Child
+		traits = { operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Eric Arthur Roberts"
+		GFX = GFX_Portrait_ENG_Eric_Roberts
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Amy Elizabeth Thorpe"
+		GFX = GFX_Portrait_ENG_Amy_Thorpe
+		traits = { operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { ENG }
+	}
+	create_operative_leader = {
+		name = "Carandini Lee"
+		GFX = GFX_Portrait_ENG_Saruman
+		traits = { operative_seducer operative_infiltrator operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = no
+		nationalities = { ENG }
+	}
+}
+
+### Ship Variants ###
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+	# Submarines #
+	create_equipment_variant = {
+		name = "O/P/R Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "S Class"
+		type = submarine_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 0
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "A/B/C/D Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Emerald Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 3
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Amphion Class"
+		type = light_cruiser_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "County Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 3
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Admiral Class"
+		type = battle_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 2
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Nelson Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "Queen Elizabeth Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# Submarines #
+	create_equipment_variant = {
+		name = "Hunter Class"
+		type = ship_hull_submarine_1
+		#name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Smedley Class"
+		type = ship_hull_light_2
+		#name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Icarus Class"
+		type = ship_hull_light_1
+		#name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Regent Class"
+		type = ship_hull_cruiser_2
+		#name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
+	create_equipment_variant = {
+		name = "Mary Class"						# cruiser minelayer
+		type = ship_hull_cruiser_1
+		#name_group = ENG_MINELAYERS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Lotus Class"
+		type = ship_hull_cruiser_1
+		#name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Hero Class"
+		type = ship_hull_heavy_1
+		#name_group = ENG_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "G1 Design"
+		type = ship_hull_heavy_1
+		#name_group = ENG_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Providence Class"
+		type = ship_hull_heavy_1
+		#name_group = ENG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+	create_equipment_variant = {
+		name = "Elizabeth Class"
+		type = ship_hull_heavy_1
+		#name_group = ENG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+}

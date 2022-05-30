@@ -1,0 +1,6 @@
+NH_ENG_WUP_struggle = {
+     icon = generic_prospect_for_resources
+     visible_when_empty = yes
+     scripted_gui = NH_ENG_WUP_powerstruggle
+picture = GFX_decision_cat_PB_ITA_Reds_Picture
+}

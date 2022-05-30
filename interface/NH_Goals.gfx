@@ -1,0 +1,304 @@
+spriteTypes = {
+
+
+SpriteType = {
+	name = "GFX_goal_PB_woman"
+	texturefile = "gfx\interface\goals\NH_goals\NH_PB_woman.dds"
+}
+SpriteType = {
+	name = "NH_NHPLAN.dds"
+	texturefile = "gfx\interface\goals\NH_goals\NH_NHPLAN.dds"
+}
+SpriteType = {
+	name = "GFX_NH_Snowden"
+	texturefile = "gfx\interface\goals\NH_goals\PB_ENG_Snowden_WUP.dds"
+}
+SpriteType = {
+	name = "GFX_NH_people_fist"
+	texturefile = "gfx\interface\goals\NH_goals\Focus_NH_peoplefist.dds"
+}
+SpriteType = {
+	name = "GFX_NH_12hr"
+	texturefile = "gfx\interface\goals\NH_goals\PB_12_Hour_Workday.dds"
+}
+SpriteType = {
+	name = "GFX_NH_Welfare"
+	texturefile = "gfx\interface\goals\NH_goals\NH_Generous_Welfare.dds"
+}
+SpriteType = {
+	name = "GFX_NH_education"
+	texturefile = "gfx\interface\goals\NH_goals\NH_education.dds"
+}
+SpriteType = {
+	name = "GFX_NH_killindustry"
+	texturefile = "gfx\interface\goals\NH_goals\killindustry.dds"
+}
+SpriteType = {
+	name = "GFX_TNO_crops"
+	texturefile = "gfx\interface\goals\NH_goals\Fight for Our Crops.png"
+}
+SpriteType = {
+	name = "GFX_TNO_brains"
+	texturefile = "gfx\interface\goals\NH_goals\Encourage Intelectuals.png"
+}
+SpriteType = {
+	name = "GFX_new_view"
+	texturefile = "gfx\interface\goals\NH_goals\newview.dds"
+}
+SpriteType = {
+	name = "GFX_owen"
+	texturefile = "gfx\interface\goals\NH_goals\owen.dds"
+}
+SpriteType = {
+	name = "GFX_bread_roses"
+	texturefile = "gfx\interface\goals\NH_goals\Bread and roses.png"
+}
+SpriteType = {
+	name = "NH_eng_prop"
+	texturefile = "gfx\interface\goals\NH_goals\NH_eng_prop.png"
+}
+SpriteType = {
+	name = "NH_exchange"
+	texturefile = "gfx\interface\goals\NH_goals\Common Investment Contributions.png"
+}
+SpriteType = {
+	name = "TNO_topsecret"
+	texturefile = "gfx\interface\goals\NH_goals\Classified Information.png"
+}
+SpriteType = {
+	name = "TNO_digging"
+	texturefile = "gfx\interface\goals\NH_goals\digging.dds"
+}
+SpriteType = {
+	name = "NH_kill_edward"
+	texturefile = "gfx\interface\goals\NH_goals\kill_edward.dds"
+}
+SpriteType = {
+	name = "NH_spread_britain"
+	texturefile = "gfx\interface\goals\NH_goals\spread_britain.dds"
+}
+SpriteType = {
+	name = "NH_npp_gun"
+	texturefile = "gfx\interface\goals\NH_goals\NH_gunNPP.dds"
+}
+SpriteType = {
+	name = "NH_rev_woman"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Revolutionary_Women.png"
+}
+SpriteType = {
+	name = "NH_industrial_rose"
+	texturefile = "gfx\interface\goals\NH_goals\Industrial_Social_Democracy.png"
+}
+SpriteType = {
+	name = "TNO_stepfrance"
+	texturefile = "gfx\interface\goals\KX_goals\GER_crush_france.png"
+}
+SpriteType = {
+	name = "NH_communist_spy"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Spy_Communist.png"
+}
+SpriteType = {
+	name = "KX_techally"
+	texturefile = "gfx\interface\goals\KX_goals\CSA_Technical_Alliance.png"
+}
+SpriteType = {
+	name = "KX_coop_manag"
+	texturefile = "gfx\interface\goals\KX_goals\NEE_coop_management.png"
+}
+SpriteType = {
+	name = "CSA_proletarian_science"
+	texturefile = "gfx\interface\goals\KX_goals\CSA_proletarian_science.png"
+}
+SpriteType = {
+	name = "NH_question_wup"
+	texturefile = "gfx\interface\goals\NH_goals\NH_question_wup.dds"
+}
+SpriteType = {
+	name = "Generic_Soldier_Aiming"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Soldier_Aiming.png"
+}
+SpriteType = {
+	name = "NH_brit_hands"
+	texturefile = "gfx\interface\goals\NH_goals\Britannia_Rule.dds"
+}
+SpriteType = {
+	name = "NH_anglosphere"
+	texturefile = "gfx\interface\goals\NH_goals\Focus_United_Anglosphere.png"
+}
+SpriteType = {
+	name = "GFX_net"
+	texturefile = "gfx\interface\goals\NH_goals\net.dds"
+}
+SpriteType = {
+	name = "NH_hill_flowers"
+	texturefile = "gfx\interface\goals\NH_goals\A hill of flowers.png"
+}
+SpriteType = {
+	name = "GFX_generic_sas"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_ENG_SAS.png"
+}
+SpriteType = {
+	name = "GFX_net"
+	texturefile = "gfx\interface\goals\NH_goals\net.dds"
+}
+SpriteType = {
+	name = "GFX_net"
+	texturefile = "gfx\interface\goals\NH_goals\net.dds"
+}
+SpriteType = {
+	name = "KX_elections"
+	texturefile = "gfx\interface\goals\KX_goals\GRU_FREE_ELECTIONS.png"
+}
+SpriteType = {
+	name = "WUP_explode"
+	texturefile = "gfx\interface\goals\NH_goals\WUPexplode.dds"
+}
+SpriteType = {
+	name = "KX_intersov"
+	texturefile = "gfx\interface\goals\KX_goals\focus_SOV_international_union_of_soviet_republics.dds"
+}
+SpriteType = {
+	name = "KX_sov_enthusiast"
+	texturefile = "gfx\interface\goals\KX_goals\focus_SOV_international_union_of_soviet_republics.dds"
+}
+SpriteType = {
+	name = "GFX_red_occ"
+	texturefile = "gfx\interface\goals\NH_goals\redoocur.dds"
+}
+SpriteType = {
+	name = "GFX_sov_soldier"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Socialist_Soldier.png"
+}
+SpriteType = {
+	name = "KX_soc_empire"
+	texturefile = "gfx\interface\goals\KX_goals\CSA_Socialist_Empire.png"
+}
+SpriteType = {
+	name = "GFX_socind"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Socialist_Industry.png"
+}
+SpriteType = {
+	name = "GFX_sochandshake"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Legislation.png"
+}
+SpriteType = {
+	name = "GFX_generic_internationalism"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Internationalism.png"
+}
+SpriteType = {
+	name = "GFX_generic_women_vote"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Womens_Suffrage.png"
+}
+SpriteType = {
+	name = "GFX_councilcommunism"
+	texturefile = "gfx\interface\goals\NH_goals\councilcommunism.dds"
+}
+SpriteType = {
+	name = "GFX_laborist"
+	texturefile = "gfx\interface\goals\NH_goals\Labourist.png"
+}
+SpriteType = {
+	name = "GFX_maoism"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Maoism.png"
+}
+SpriteType = {
+	name = "GFX_revgov"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Revolutionary_Government.png"
+}
+SpriteType = {
+	name = "GFX_revolution"
+	texturefile = "gfx\interface\goals\NH_goals\Generic_Socialist_Revolution.png"
+}
+SpriteType = {
+	name = "GFX_natural_international"
+	texturefile = "gfx\interface\goals\KX_goals\goal_NEE_Naturalist_Internationale.png"
+}
+SpriteType = {
+	name = "KX_red_banner"
+	texturefile = "gfx\interface\goals\KX_goals\HON_Socialist_Banner.png"
+}
+SpriteType = {
+	name = "KX_african_torch"
+	texturefile = "gfx\interface\goals\KX_goals\goal_GAB_republican_pan_africanism.png"
+}
+SpriteType = {
+	name = "KX_NIC_second_occupation_edited"
+	texturefile = "gfx\interface\goals\KX_goals\NIC_Second_Occupation_edited.dds"
+}
+SpriteType = {
+	name = "KX_east_african_question"
+	texturefile = "gfx\interface\goals\NH_goals\east_africa_question.dds"
+}
+SpriteType = {
+	name = "KX_draw_west_af"
+	texturefile = "gfx\interface\goals\NH_goals\draw_west_af.dds"
+}
+SpriteType = {
+	name = "GFX_split_east_af"
+	texturefile = "gfx\interface\goals\NH_goals\split_eaf.dds"
+}
+SpriteType = {
+	name = "KX_pan_af_soc"
+	texturefile = "gfx\interface\goals\KX_goals\goal_GAB_revolutionary_pan_africanism.png"
+}
+SpriteType = {
+	name = "GFX_west_indes_torch"
+	texturefile = "gfx\interface\goals\NH_goals\west_indes_torch.dds"
+}
+SpriteType = {
+	name = "GFX_arabia_torch"
+	texturefile = "gfx\interface\goals\NH_goals\torch_arabia.dds"
+}
+SpriteType = {
+	name = "GFX_madagascar_torch"
+	texturefile = "gfx\interface\goals\NH_goals\madagascar_torch.dds"
+}
+SpriteType = {
+	name = "GFX_leverage"
+	texturefile = "gfx\interface\goals\NH_goals\leverage.dds"
+}
+SpriteType = {
+	name = "GFX_LON_money"
+	texturefile = "gfx\interface\goals\NH_goals\LON_money.dds"
+}
+SpriteType = {
+	name = "GFX_LON_constitution"
+	texturefile = "gfx\interface\goals\NH_goals\LON_constitution.dds"
+}
+SpriteType = {
+	name = "GFX_victoria_handshake"
+	texturefile = "gfx\interface\goals\NH_goals\victoria_handshake.dds"
+}
+SpriteType = {
+	name = "GFX_quebec_handshake"
+	texturefile = "gfx\interface\goals\NH_goals\quebec_handshake.dds"
+}
+SpriteType = {
+	name = "GFX_america_handshake"
+	texturefile = "gfx\interface\goals\NH_goals\america_handshake.dds"
+}
+SpriteType = {
+	name = "GFX_begin_conference"
+	texturefile = "gfx\interface\goals\NH_goals\The Conference Begins.png"
+}
+SpriteType = {
+	name = "GFX_churchill_fucking_dies"
+	texturefile = "gfx\interface\goals\NH_goals\deathtochurchill.dds"
+}
+SpriteType = {
+	name = "GFX_supportcal"
+	texturefile = "gfx\interface\goals\NH_goals\supportcal.dds"
+}
+SpriteType = {
+	name = "GFX_supporthun"
+	texturefile = "gfx\interface\goals\NH_goals\supporthun.dds"
+}
+SpriteType = {
+	name = "GFX_generic_communist_militia"
+	texturefile = "gfx\interface\goals\NH_goals\Focus_Communal_Militias.png"
+}
+spriteType = {
+	name = "GFX_idea_ENG_PB_NH_Philip_Snowden_HOG"
+	texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Britain/ENG_PB_Douglas_Haig_HOG.dds"
+}
+}

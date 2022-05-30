@@ -1,0 +1,465 @@
+
+ideas = {
+
+
+	country = {
+
+		NH_ENG_Union_Support = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = NH_Union_Support
+
+			removal_cost = -1
+
+			modifier = {
+political_power_gain = 0.10
+party_popularity_stability_factor = 0.0.5
+production_speed_industrial_complex_factor = 0.02
+production_factory_max_efficiency_factor = 0.02
+			}
+		}
+    NH_ENG_coop_econ = {
+
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+            picture = GFX_idea_PB_Affirmitive_Action
+
+      removal_cost = -1
+
+      modifier = {
+political_power_gain = 0.10
+party_popularity_stability_factor = 0.0.5
+production_speed_industrial_complex_factor = 0.02
+production_factory_max_efficiency_factor = 0.02
+      }
+    }
+    NH_ENG_RapidEdu = {
+
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+            picture = GFX_idea_PB_Universal_Basic
+
+      removal_cost = -1
+
+      modifier = {
+political_power_gain = 0.10
+party_popularity_stability_factor = 0.0.5
+production_speed_industrial_complex_factor = 0.02
+production_factory_max_efficiency_factor = 0.02
+      }
+    }
+    NH_ENG_BioMedDev = {
+
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+            picture = GFX_idea_PB_FRA_SP_Heart
+
+      removal_cost = -1
+
+      modifier = {
+      	research_time_factor = { air_doctrine = 0.08 }
+      }
+    }
+    NH_Slowed_Automation = {
+
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+            picture = GFX_idea_PB_Automation_Crisis
+
+      removal_cost = -1
+
+      modifier = {
+production_factory_efficiency_gain_factor = -0.10
+production_speed_industrial_complex_factor = -0.10
+consumer_goods_factor = -0.02
+      }
+    }
+    NH_Galvanized_development = {
+
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+            picture = GFX_idea_PB_FRA_Research
+
+      removal_cost = -1
+
+      modifier = {
+research_speed_factor = 0.05
+      }
+    }
+		NH_direct_control = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+						picture = GFX_idea_NH_direct_control
+
+			removal_cost = -1
+
+			modifier = {
+consumer_goods_factor = -0.03
+production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		NH_new_view = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+						picture = GFX_idea_ENG_PB_WUP_Workers_Chrater_Expanded
+
+			removal_cost = -1
+
+			modifier = {
+      monthly_population = 0.05
+			stability_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+
+		NH_owen_realized = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+						picture = GFX_idea_PB_FRA_Renewed_National_Spirit
+
+			removal_cost = -1
+
+			modifier = {
+      industrial_capacity_factory = 0.05
+			}
+		}
+		NH_nationalist_prop = {
+    picture = GFX_idea_ENG_Military_Indoctrination
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			war_support_factor = 0.2
+			stability_factor = 0.05
+			}
+		}
+		NH_won_small = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_idea_PB_GER_Libertine_Culture
+
+			removal_cost = -1
+
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			consumer_goods_factor = -0.03
+			}
+		}
+		NH_ENG_cont_coop_econ = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = yes
+      }
+            picture = GFX_idea_PB_Affirmitive_Action
+
+      removal_cost = -1
+
+      modifier = {
+political_power_gain = 0.15
+party_popularity_stability_factor = 0.1
+production_speed_industrial_complex_factor = 0.05
+production_factory_max_efficiency_factor = 0.05
+      }
+    }
+
+		NH_french_menace = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = yes
+      }
+            picture = GFX_idea_PB_GER_french_terrorism
+
+      removal_cost = -1
+    targeted_modifier = {
+     tag = FRA defence_bonus_against = 0.05
+		 tag = FRA attack_bonus_against = 0.05
+		 }
+    }
+		NH_called_world = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = yes
+      }
+            picture = GFX_idea_PB_FRA_Military_Total_ControlGFX_idea_
+
+      removal_cost = -1
+     modifier = {
+		  army_chief_cost_factor = -0.5
+		 }
+    }
+		NH_everythinggot = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+						picture = GFX_idea_PB_FRA_SP_Total_Control
+
+			removal_cost = -1
+		 modifier = {
+			war_support_factor = 0.15
+			mobilization_speed = 0.1
+			conscription = 0.02
+			surrender_limit = 0.5
+			max_command_power = 50
+		 }
+		}
+NH_widespread_communes = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+						picture = GFX_idea_PB_FRA_Renewed_National_Spirit
+
+			removal_cost = -1
+		 modifier = {
+      war_stability_factor = 0.1
+			monthly_population = 0.05
+			army_morale_factor = 0.05
+		 }
+		}
+NH_supercharged_dev = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_PB_FRA_ResearchGFX_idea_
+ removal_cost = -1
+ modifier = {
+  research_speed_factor = 0.1
+ }
+}
+NH_keepfed = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_PB_GER_Relief_Packages
+ removal_cost = -1
+ modifier = {
+  war_stability_factor = 0.2
+	production_factory_max_efficiency_factor = 0.05
+	attrition = 0.05
+	no_supply_grace = -5
+	supply_consumption_factor = 0.05
+ }
+}
+NH_gt_human_employment = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_ENG_PB_WUP_Workers_Chrater_Expanded
+ removal_cost = -1
+ modifier = {
+  industrial_capacity_factory = -0.1
+	consumer_goods_factor = -0.02
+ }
+}
+NH_increased_coop_empire = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_ENG_PB_Britain_Forever
+ removal_cost = -1
+ targeted_modifier = { tag = ame
+  production_factory_max_efficiency_factor = 0.05
+	consumer_goods_factor = -0.02
+ }
+ targeted_modifier = { tag = que
+	production_factory_max_efficiency_factor = 0.05
+ consumer_goods_factor = -0.02
+ }
+ targeted_modifier = { tag = raj
+	production_factory_max_efficiency_factor = 0.05
+ consumer_goods_factor = -0.02
+ }
+ targeted_modifier = { tag = bfe
+	production_factory_max_efficiency_factor = 0.05
+ consumer_goods_factor = -0.02
+ }
+ targeted_modifier = { tag = vic
+	production_factory_max_efficiency_factor = 0.05
+ consumer_goods_factor = -0.02
+ }
+}
+NH_volunteers_to_russia = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+		always = yes
+ }
+	picture = GFX_idea_PB_FRA_SP_Total_Control
+	removal_cost = -1
+	modifier = {
+   send_volunteers_tension = -1
+	}
+}
+NH_united_army = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_ENG_PB_Master_World
+ removal_cost = -1
+ targeted_modifier = { tag = ame
+  army_attack_factor = 0.05
+	army_defence_factor = 0.05
+	army_org_factor = 0.05
+ }
+ targeted_modifier = { tag = que
+	army_attack_factor = 0.05
+ army_defence_factor = 0.05
+ 	army_org_factor = 0.05
+ }
+ targeted_modifier = { tag = raj
+	army_attack_factor = 0.05
+ army_defence_factor = 0.05
+ 	army_org_factor = 0.05
+ }
+ targeted_modifier = { tag = bfe
+	army_attack_factor = 0.05
+ army_defence_factor = 0.05
+ 	army_org_factor = 0.05
+ }
+ targeted_modifier = { tag = vic
+	army_attack_factor = 0.05
+ army_defence_factor = 0.05
+ 	army_org_factor = 0.05
+ }
+}
+NH_LON_sup = {
+ allowed = {
+  always = no
+ }
+ allowed_civil_war = {
+  always = yes
+ }
+ picture = GFX_idea_ENG_League_of_Nations_Member
+ removal_cost = -1
+ modifier = {
+ consumer_goods_factor = -0.02
+ }
+}
+NH_support_from_britain_foreign = {
+ allowed = {
+	always = no
+ }
+ allowed_civil_war = {
+		always = yes
+ }
+	picture = GFX_idea_Generic_British_Advisors
+	removal_cost = -1
+	modifier = {
+	 army_attack_factor = 0.05
+	 army_defence_factor = 0.05
+	 army_org_factor = 0.05
+	}
+}
+}
+}

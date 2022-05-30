@@ -1,0 +1,19 @@
+spriteTypes = {
+
+SpriteType = {
+	name = "GFX_idea_ENG_PB_NH_Philip_Snowden_HOG"
+	textureFile = "gfx\interface\ideas\Government_Ideas\Head_of_Government\Britain\ENG_PB_NH_Philip_Snowden_HOG.dds"
+}
+spriteType = {
+	name = "GFX_idea_ENG_PB_NH_Philip_Snowden_HOG"
+	texturefile = "gfx/interface/ideas/Government_Ideas/Head_of_Government/Britain/ENG_PB_Douglas_Haig_HOG.dds"
+}
+SpriteType = {
+	name = "GFX_idea_NH_Union_Support"
+	textureFile = "gfx\interface\ideas\unionsupport.dds"
+}
+SpriteType = {
+	name = "GFX_idea_NH_direct_control"
+	textureFile = "gfx\interface\ideas\planned_economy.dds"
+}
+}

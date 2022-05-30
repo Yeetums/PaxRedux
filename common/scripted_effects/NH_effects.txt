@@ -1,0 +1,24 @@
+NH_increase_pragmatist = {
+custom_effect_tooltip =   NH_WUP_empower_pragmatist
+  add_to_variable{
+  NH_ENG_WUP_powerstruggle = -1
+  }
+}
+NH_increase_utopian = {
+custom_effect_tooltip =   NH_WUP_empower_utopian
+  add_to_variable{
+  NH_ENG_WUP_powerstruggle = 1
+  }
+}
+NH_increase_utopian2 = {
+custom_effect_tooltip = NH_WUP_empower_utopian2
+  add_to_variable{
+  NH_ENG_WUP_powerstruggle = 3
+  }
+}
+NH_increase_utopian3 = {
+custom_effect_tooltip = NH_WUP_empower_utopian3
+  add_to_variable{
+  NH_ENG_WUP_powerstruggle = 3
+  }
+}

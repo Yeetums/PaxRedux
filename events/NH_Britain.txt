@@ -1,0 +1,1536 @@
+add_namespace = NH.britain
+add_namespace = britain_postwar
+add_namespace = NH.britain.occupied
+add_namespace = NH.britain.fp
+
+country_event = {
+ id = NH.britain.0
+ title = NH.britain.0
+ desc = NH.britain.0.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+	name = NH.britain.8.a
+	ai_chance = {
+	factor = 100
+				}
+				custom_effect_tooltip = NH_WUP_empower_utopian2
+				add_to_variable = { NH_ENG_WUP_powerstruggle = 200 }
+				}
+}
+
+country_event = {		#General Election Chain - WUP Victory
+	id = NH.britain.1
+	title = NH.britain.1
+	desc = NH.britain.1.d
+	picture = GFX_report_PB_Generic_Political_Event
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = NH.britain.1.a
+
+		ai_chance = {
+			factor = 100
+		}
+custom_effect_tooltip = NH_ENG_attleevic
+set_country_flag = ENG_PM_Attlee
+
+		set_politics = {
+			ruling_party = ss
+			elections_allowed = no
+			custom_effect_tooltip = NH_ENG_attleevic
+		}
+
+
+
+		hidden_effect = {
+			set_country_flag = ENG_General_Election_Completed
+			clr_country_flag = ENG_Election_Tories_Popularity
+			clr_country_flag = ENG_Election_Whigs_Popularity
+			clr_country_flag = ENG_Election_Unionist_Popularity
+			clr_country_flag = ENG_Election_NPP_Popularity
+			clr_country_flag = leading_coalition_cn
+			remove_ideas = cn_coalition_leader
+			set_country_flag = leading_coalition_ss
+			add_ideas = ss_coalition_leader
+
+
+			add_ideas = ENG_PB_Clement_Attlee_HOG
+			add_ideas = ENG_PB_George_Barnes_FAM
+			add_ideas = ENG_PB_Arthur_Horner_ECM
+			add_ideas = ENG_PB_James_Ede_IAM
+
+			ENG = {
+
+				set_variable = { var = ENG_HaigTory_Support value = 0 }
+				set_variable = { var = ENG_ProgCon_Support value = 40 }
+				set_variable = { var = ENG_Liberal_Support value = 50 }
+				set_variable = { var = ENG_ModWUP_Support value = 100 }
+				set_variable = { var = ENG_HardWUP_Support value = 100 }
+				set_variable = { var = ENG_NPP_Support value = 0 }
+				add_to_variable = { NH_ENG_WUP_powerstruggle = -3 }
+				custom_effect_tooltip = NH_ENG_attleevic
+			}
+		}
+
+		hidden_effect = {
+
+		}
+	}
+  option = {
+    name = NH.britain.1.b
+
+    ai_chance = {
+      factor = 100
+    }
+
+
+    set_politics = {
+      ruling_party = ss
+      elections_allowed = no
+    }
+
+    add_popularity = {
+        ideology = jc
+        popularity = 0.15
+    }
+custom_effect_tooltip = NH_ENG_wellsvic
+      set_country_flag = ENG_PM_Snowden
+
+    PB_clear_all_ministers = yes
+
+    hidden_effect = {
+      set_country_flag = ENG_General_Election_Completed
+      clr_country_flag = ENG_Election_Tories_Popularity
+      clr_country_flag = ENG_Election_Whigs_Popularity
+      clr_country_flag = ENG_Election_Unionist_Popularity
+      clr_country_flag = ENG_Election_NPP_Popularity
+      clr_country_flag = leading_coalition_cn
+      set_country_flag = ENG_PM_Snowden
+      remove_ideas = cn_coalition_leader
+      set_country_flag = leading_coalition_ss
+      add_ideas = ss_coalition_leader
+
+      add_ideas = ENG_PB_Phillip_Snowden_HOG
+      add_ideas = ENG_PB_George_Barnes_FAM
+      add_ideas = ENG_PB_Arthur_Horner_ECM
+      add_ideas = ENG_PB_James_Ede_IAM
+			add_to_variable = { NH_ENG_WUP_powerstruggle = 3 }
+
+
+
+      ENG = {
+
+        set_variable = { var = ENG_HaigTory_Support value = 0 }
+        set_variable = { var = ENG_ProgCon_Support value = 40 }
+        set_variable = { var = ENG_Liberal_Support value = 50 }
+        set_variable = { var = ENG_ModWUP_Support value = 100 }
+        set_variable = { var = ENG_HardWUP_Support value = 100 }
+        set_variable = { var = ENG_NPP_Support value = 0 }
+      }
+    }
+
+    hidden_effect = {
+
+    }
+  }
+}
+country_event ={
+     id = NH.britain.2
+     title = NH.britain.2
+     desc = NH.britain.2.d
+     picture = GFX_report_PB_Generic_Political_Event
+
+     is_triggered_only = yes
+
+     fire_only_once = yes
+     option = {
+   		name = NH.britain.2.a
+
+   		ai_chance = {
+   			factor = 100
+   		}
+      }
+      }
+
+  country_event ={
+       id = NH.britain.3
+       title = NH.britain.3
+       desc = NH.britain.3.d
+       picture = GFX_report_PB_Generic_Political_Event
+
+       is_triggered_only = yes
+
+       fire_only_once = yes
+       option = {
+     		name = NH.britain.3.a
+     		ai_chance = {
+    			factor = 100
+     		}
+        }
+        }
+
+	country_event ={
+			    id = NH.britain.4
+			    title = NH.britain.4
+			    desc = NH.britain.4.d
+			    picture = GFX_report_PB_Generic_Political_Event
+
+			    is_triggered_only = yes
+
+		     fire_only_once = yes
+			   option = {
+		  		name = NH.britain.4.a
+		     	ai_chance = {
+			 		factor = 100
+	     		}
+	        }
+			    }
+	country_event ={
+					  id = NH.britain.5
+						 title = NH.britain.5
+					 desc = NH.britain.5.d
+					 picture = GFX_report_PB_Generic_Political_Event
+
+  			    is_triggered_only = yes
+
+			     fire_only_once = yes
+		   	   option = {
+  	  		name = NH.britain.5.a
+					ai_chance = {
+			 		factor = 100
+			  	}
+			    }
+	        }
+
+	country_event ={
+	  id = NH.britain.6
+						 title = NH.britain.6
+					 desc = NH.britain.6.d
+						 picture = GFX_report_PB_Chemistry
+
+				     is_triggered_only = yes
+
+						  fire_only_once = yes
+						    option = {
+				  	name = NH.britain.6.a
+						ai_chance = {
+							factor = 100
+							  	}
+							    }
+					        }
+				country_event ={
+						id = NH.britain.7
+							title = NH.britain.7
+						 desc = NH.britain.7.d
+					 picture = GFX_report_PB_Mosely
+
+						is_triggered_only = yes
+
+					 fire_only_once = yes
+					 option = {
+						name = NH.britain.7.a
+						ai_chance = {
+						factor = 100
+									}
+						country_event = {id = NH.britain.8 days = 3}
+									}
+         	option = {
+			 		name = NH.britain.7.b
+			 		ai_chance = {
+			 		factor = 100
+			 									}
+						country_event = {id = NH.britain.9 days = 7}
+							    }
+						      }
+									country_event ={
+											id = NH.britain.8
+												title = NH.britain.8
+											 desc = NH.britain.8.d
+										 picture = GFX_report_PB_Mosely
+
+											is_triggered_only = yes
+
+										 fire_only_once = yes
+										 option = {
+											name = NH.britain.8.a
+											ai_chance = {
+											factor = 100
+														}
+														custom_effect_tooltip = NH_WUP_empower_utopian2
+														add_to_variable = { NH_ENG_WUP_powerstruggle = 3 }
+														}
+
+														}
+														country_event ={
+																id = NH.britain.9
+																	title = NH.britain.9
+																 desc = NH.britain.9.d
+															 picture = GFX_report_PB_Mosely
+
+																is_triggered_only = yes
+
+															 fire_only_once = yes
+															 option = {
+																name = NH.britain.9.a
+																ai_chance = {
+																factor = 100
+																			}
+																			add_to_variable = { NH_ENG_WUP_powerstruggle = 3 }
+																			custom_effect_tooltip = NH_WUP_empower_utopian2
+																			}
+
+																			}
+country_event = {
+ id = NH.britain.10
+ title = NH.britain.10
+ desc = NH.britain.10.d
+ picture = GFX_report_PB_Swing_Music
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.10.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.11
+ title = NH.britain.11
+ desc = NH.britain.11.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.11.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.12
+ title = NH.britain.12
+ desc = NH.britain.12.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.12.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.13
+ title = NH.britain.13
+ desc = NH.britain.13.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.13.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.14
+ title = NH.britain.14
+ desc = NH.britain.14.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.14.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.15
+ title = NH.britain.15
+ desc = NH.britain.15.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.15.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.16
+ title = NH.britain.16
+ desc = NH.britain.16.d
+ picture = GFX_report_PB_checkpoint
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.16.a
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+country_event = {
+ id = NH.britain.17
+ title = NH.britain.17
+ desc = NH.britain.17.d
+ picture = GFX_report_PB_german_shadow
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.17.a
+	news_event = { id = NH.britain.18 days = 2 }
+	ai_chance = {
+	factor = 100
+				}
+ }
+}
+news_event = {
+ id = NH.britain.18
+ title = NH.britain.18
+ desc = NH.britain.18.d
+ picture = GFX_PBNews_eng_george_death
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.18.a
+	ai_chance = {
+	factor = 100
+				}
+				hidden_effect = {
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = JC_VARIANT_07
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = RC_VARIANT_01
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = CN_VARIANT_01
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = LB_VARIANT_01
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = SS_VARIANT_03
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = DS_VARIANT_01
+
+					}
+					create_country_leader = {
+						name = "HM Albert I"
+						desc = "HM_Albert_I_Desc"
+						picture = "Portrait_ENG_George_VI.dds"
+						expire = "1965.1.1"
+						ideology = NI_VARIANT_01
+
+					}
+				}
+
+ }
+}
+news_event = {
+ id = NH.britain.19
+ title = NH.britain.19
+ desc = NH.britain.19.d
+ picture = GFX_PBNews_eng_george_death
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.19.a
+	ai_chance = {
+	factor = 100
+	hidden_effect = {
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = JC_VARIANT_07
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = RC_VARIANT_01
+
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = CN_VARIANT_01
+
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = LB_VARIANT_01
+
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = SS_VARIANT_03
+
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = DS_VARIANT_01
+
+		}
+		create_country_leader = {
+			name = "HM George VI"
+			desc = "HM_George_VI_Desc"
+			picture = "Portrait_ENG_George_VI.dds"
+			expire = "1965.1.1"
+			ideology = NI_VARIANT_01
+
+		}
+	}
+
+				}
+ }
+}
+country_event = {
+id = NH.britain.20
+title = NH.britain.20
+desc = NH.britain.20.d
+picture = GFX_PBNews_eng_george_death
+is_triggered_only = yes
+option = {
+ name = NH.britain.20.a
+ add_popularity = { ideology = rc popularity = -1 }
+ set_party_name = {
+     ideology = rc
+     long_name = NH_party_collapse
+     name = NH_party_collapse
+ }
+ ai_chance = {
+ factor = 100
+			 }
+}
+}
+country_event = {
+ id = NH.britain.21
+ title = NH.britain.21
+ desc = NH.britain.21.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.21.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.22
+ title = NH.britain.22
+ desc = NH.britain.22.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.22.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.23
+ title = NH.britain.23
+ desc = NH.britain.23.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.23.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.24
+ title = NH.britain.24
+ desc = NH.britain.24.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.24.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.25
+ title = NH.britain.25
+ desc = NH.britain.25.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.25.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.26
+ title = NH.britain.26
+ desc = NH.britain.26.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.26.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.27
+ title = NH.britain.27
+ desc = NH.britain.27.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.27.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.28
+ title = NH.britain.28
+ desc = NH.britain.28.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.28.a
+	ai_chance = {
+	 factor = 100
+	}
+	create_country_leader = {
+		name = "Provisional fefwewefefwefPeople's Congress of Britain"
+		desc = "?"
+		picture = "gfx\leaders\ENG\westminster.dds"
+		ideology = SS_VARIANT_01
+	}
+ }
+}
+country_event = {
+ id = NH.britain.29
+ title = NH.britain.29
+ desc = NH.britain.29.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.29.a
+	ai_chance = {
+	 factor = 100
+	}
+	create_country_leader = {
+		name = "Provisional People's Congress of Britain"
+		desc = "?"
+		picture = "Portrait_ENG_westminster.dds"
+		ideology = SS_VARIANT_01
+		expire = "1965.1.1"
+	}
+	end_puppet = AME
+	end_puppet = IRE
+	end_puppet = VIC
+	end_puppet = RAJ
+	end_puppet = EGY
+	end_puppet = HNK
+	end_puppet = QUE
+	end_puppet = BCL
+	end_puppet = bfe
+	end_puppet = BAF
+	end_puppet = ACD
+	end_puppet = BEF
+	end_puppet = SNG
+	end_puppet = NZL
+	end_puppet = TUN
+	end_puppet = MDR
+	remove_from_faction = eng
+	set_cosmetic_tag = NH_british_republic
+
+ }
+}
+country_event = {
+ id = NH.britain.30
+ title = NH.britain.30
+ desc = NH.britain.30.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.30.a
+	ai_chance = {
+	 factor = 100
+	}
+	set_party_name = {
+    ideology = ss
+    long_name = NH_ENG_POSTWUP_SS
+    name = NH_ENG_POSTWUP_SS
+  }
+	set_party_name = {
+		ideology = jc
+		long_name = NH_ENG_POSTWUP_JC
+		name = NH_ENG_POSTWUP_JC
+	}
+ }
+}
+country_event = {
+ id = NH.britain.31
+ title = NH.britain.31
+ desc = NH.britain.31.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.31.a
+	ai_chance = {
+	 factor = 100
+	}
+	create_faction = "Socialist International"
+	add_to_faction = JAP
+	add_to_faction = HUN
+ }
+}
+country_event = {
+ id = NH.britain.32
+ title = NH.britain.32
+ desc = NH.britain.32.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.32.a
+	ai_chance = {
+	 factor = 100
+	}
+	if = {
+	 limit = { has_country_flag = NH_eng_occupied_paris }
+   OFA = { set_cosmetic_tag = OFA_jc1 }
+	 OFA = {
+	  set_politics = { ruling_party = jc }
+	 ENG = { add_to_faction = OFA }
+	}
+ }
+ else = {
+  FRA = {
+	 transfer_state = 14
+	 transfer_state = 30
+	 transfer_state = 33
+	 transfer_state = 26
+	 transfer_state = 22
+	 transfer_state = 31
+	 transfer_state = 557
+	 transfer_state = 19
+	 transfer_state = 25
+	 transfer_state = 825
+	 transfer_state = 23
+	}
+	FRA = { set_cosmetic_tag = OFA_jc1 }
+	FRA = {
+	 set_politics = { ruling_party = jc }
+	ENG = { add_to_faction = FRA }
+ }
+ }
+ if = {
+	limit = { has_country_flag = NH_eng_occupied_rome }
+  ITA = {
+	 set_politics = { ruling_party = jc }
+	 set_cosmetic_tag = NH_ita_soc_republic
+	}
+	ENG = { add_to_faction = ITA }
+ }
+ if = {
+ limit = { has_country_flag = NH_eng_occupied_madrid }
+	SPR = { set_cosmetic_tag = NH_spr_soc_republic }
+  SPR = {
+	set_politics = { ruling_party = ss }
+ ENG = { add_to_faction = spr }
+ }
+ }
+ CAT = {
+ transfer_state = 165
+ add_state_core = 165
+ transfer_state = 166
+ add_state_core = 166
+ transfer_state = 167
+ add_state_core = 167
+ set_cosmetic_tag = CAT_soc_rep
+ set_politics = { ruling_party = ss }
+}
+ENG = { add_to_faction = CAT }
+}
+}
+country_event = {
+ id = NH.britain.35
+ title = NH.britain.35
+ desc = NH.britain.35.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.35.a
+  trigger = {
+   has_country_flag = NH_ENG_Harmonistvic
+  }
+	ai_chance = {
+	 factor = 100
+	}
+  ENG = {
+   set_cosmetic_tag = NH_ENG_Harmonists
+  }
+ }
+ option = {
+  name = NH.britain.35.b
+  trigger = {
+   has_country_flag = NH_ENG_Councilvic
+  }
+ ai_chance = {
+  factor = 100
+ }
+  ENG = {
+   set_cosmetic_tag = NH_ENG_Councilists
+  }
+ }
+ option = {
+  name = NH.britain.35.b
+  trigger = {
+   has_country_flag = NH_ENG_Vanguardvic
+  }
+ ai_chance = {
+  factor = 100
+ }
+  ENG = {
+   set_cosmetic_tag = NH_ENG_Vanguardist
+  }
+ }
+}
+country_event = {
+ id = NH.britain.36
+ title = NH.britain.36
+ desc = NH.britain.fp.36.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.36.a
+	ai_chance = {
+	 factor = 100
+	}
+  set_party_name = {
+    ideology = ss
+    long_name = NH_ENG_ALLIMP
+    name = NH_ENG_ALLIMP
+  }
+ }
+}
+country_event = {
+ id = NH.britain.37
+ title = NH.britain.37
+ desc = NH.britain.fp.37.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.37.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.38
+ title = NH.britain.38
+ desc = NH.britain.38.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.38.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.39
+ title = NH.britain.39
+ desc = NH.britain.39.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.39.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.40
+ title = NH.britain.40
+ desc = NH.britain.40.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.40.a
+	ai_chance = {
+	 factor = 100
+	}
+  OFA = {
+   add_opinion_modifier = { target = ENG modifier = large_increase }
+  }
+ }
+}
+country_event = {
+ id = NH.britain.41
+ title = NH.britain.41
+ desc = NH.britain.41.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.41.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.42
+ title = NH.britain.42
+ desc = NH.britain.42.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.42.a
+	ai_chance = {
+	 factor = 100
+	}
+  ENG = {
+   set_cosmetic_tag = NH_IMPERIAL_FED_REALIZED
+   every_state = {
+    limit = { is_owned_by = AME }
+    ENG = { add_state_core = PREV }
+}
+ every_state = {
+    limit = { is_owned_by = QUE }
+    ENG = { add_state_core = PREV }
+   }
+ every_state = {
+  limit = { is_owned_by = VIC }
+    ENG = { add_state_core = PREV }
+   }
+   annex_country = { target = AME transfer_troops = yes }
+   annex_country = { target = VIC transfer_troops = yes }
+   annex_country = { target = QUE transfer_troops = yes }
+   set_capitol = 811
+  }
+  BCL = {
+   set_cosmetic_tag = BCL_imp_dom
+  }
+  IRE = {
+   set_cosmetic_tag = IRE_imp_aut
+  }
+ }
+}
+country_event = {
+ id = NH.britain.42
+ title = NH.britain.42
+ desc = NH.britain.42.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.42.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.46
+ title = NH.britain.46
+ desc = NH.britain.46.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.46.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.47
+ title = NH.britain.47
+ desc = NH.britain.47.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.47.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.48
+ title = NH.britain.48
+ desc = NH.britain.48.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.48.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.50
+ title = NH.britain.50
+ desc = NH.britain.50.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.50.a
+	ai_chance = {
+	 factor = 100
+	}
+  if = {
+    limit = {
+     has_country_flag = NH_HARMONIST_VIC
+    }
+    set_cosmetic_tag = NH_ENG_Harmonists
+  }
+  if = {
+    limit = {
+     has_country_flag = NH_VANGUARD_VIC
+    }
+    set_cosmetic_tag = NH_ENG_Vanguardist
+  }
+  if = {
+    limit = {
+     has_country_flag = NH_COUNCIL_VIC
+    }
+    set_cosmetic_tag = NH_ENG_Councilits
+  }
+  if = {
+   limit = {
+    has_country_flag = NH_eng_occupied_paris
+   }
+   ENG = {
+   every_state = {
+      limit = { is_owned_by = OFA }
+      ENG = { add_state_core = PREV }
+     }
+     annex_country = { target = OFA transfer_troops = yes }
+    }
+   }
+   else = {
+   ENG = {
+   every_state = {
+      limit = { is_owned_by = FRA }
+      ENG = { add_state_core = PREV }
+     }
+     annex_country = { target = FRA transfer_troops = yes }
+    }
+   }
+   if = {
+    limit = {
+     has_country_flag = NH_eng_occupied_rome
+    }
+    ENG = {
+    every_state = {
+       limit = { is_owned_by = ITA }
+       ENG = { add_state_core = PREV }
+      }
+      annex_country = { target = ITA transfer_troops = yes }
+     }
+   }
+   if = {
+    limit = {
+     has_country_flag = NH_eng_occupied_madrid
+    }
+    ENG = {
+    every_state = {
+       limit = { is_owned_by = SPR }
+       ENG = { add_state_core = PREV }
+      }
+      annex_country = { target = SPR transfer_troops = yes }
+     }
+   }
+   ENG = {
+   every_state = {
+      limit = { is_owned_by = CAT }
+      ENG = { add_state_core = PREV }
+     }
+     annex_country = { target = CAT transfer_troops = yes }
+    }
+  }
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+ id = NH.britain.fp.1
+ title = NH.britain.fp.1
+ desc = NH.britain.fp.1.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.1.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.2
+ title = NH.britain.fp.2
+ desc = NH.britain.fp.2.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.2.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.3
+ title = NH.britain.fp.3
+ desc = NH.britain.fp.3.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.3.a
+	ai_chance = {
+	 factor = 100
+	}
+  country_event = { id = NH.britain.fp.4 }
+ }
+}
+country_event = {
+ id = NH.britain.fp.4
+ title = NH.britain.fp.4
+ desc = NH.britain.fp.4.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.4.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.5
+ title = NH.britain.fp.5
+ desc = NH.britain.fp.5.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.5.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.6
+ title = NH.britain.fp.6
+ desc = NH.britain.fp.6.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.6.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.7
+ title = NH.britain.fp.7
+ desc = NH.britain.fp.7.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.7.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.8
+ title = NH.britain.fp.8
+ desc = NH.britain.fp.8.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.8.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.9
+ title = NH.britain.fp.9
+ desc = NH.britain.fp.9.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.9.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+country_event = {
+ id = NH.britain.fp.10
+ title = NH.britain.fp.10
+ desc = NH.britain.fp.10.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.fp.10.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+ id = NH.britain.100000000000000
+ title = NH.britain.35
+ desc = NH.britain.35.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.35.a
+	ai_chance = {
+	 factor = 100
+	}
+  ENG = {
+   set_country_flag = NH_ENG_Councilvic
+  }
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+ id = NH.britain.occupied.1
+ title = NH.britain.occupied.1
+ desc = NH.britain.occupied.1.d
+ picture = GFX_report_PB_Generic_Political_Event
+ trigger = {
+  16 = is_controlled_by = ENG
+ }
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.occupied.1.a
+	ai_chance = {
+	 factor = 100
+	}
+  set_country_flag = NH_eng_occupied_paris
+ }
+}
+country_event = {
+ id = NH.britain.occupied.2
+ title = NH.britain.occupied.2
+ desc = NH.britain.occupied.2.d
+ picture = GFX_report_PB_Generic_Political_Event
+ trigger = {
+  41 = is_controlled_by = ENG
+ }
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.occupied.2.a
+	ai_chance = {
+	 factor = 100
+	}
+  set_country_flag = NH_eng_occupied_madrid
+ }
+}
+country_event = {
+ id = NH.britain.occupied.3
+ title = NH.britain.occupied.3
+ desc = NH.britain.occupied.3.d
+ picture = GFX_report_PB_Generic_Political_Event
+ trigger = {
+  2 = is_controlled_by = ENG
+ }
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.occupied.3.a
+	ai_chance = {
+	 factor = 100
+	}
+  set_country_flag = NH_eng_occupied_rome
+ }
+}
+country_event = {
+ id = NH.britain.33
+ title = NH.britain.33
+ desc = NH.britain.33.d
+ picture = GFX_report_PB_Generic_Political_Event
+ is_triggered_only = yes
+
+ fire_only_once = yes
+ option = {
+  name = NH.britain.33.a
+	ai_chance = {
+	 factor = 100
+	}
+ }
+}

@@ -1,0 +1,34 @@
+ideas = {
+
+	head_of_government = {
+		law = yes
+    ENG_PB_Phillip_Snowden_HOG = {
+
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = ENG
+				has_government = jc
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			available = {
+				always = no
+			}
+			picture = GFX_idea_PRS_PB_Franz_Halder
+
+			traits = {
+				PB_jc_trait
+				PB_Benevolent
+			}
+
+			cancel_if_invalid = no
+
+		}
+    }
+}

@@ -1,0 +1,3 @@
+SML = "countries/Somalia.txt"
+UGN = "countries/Uganda.txt"
+SDN = "countries/Sudan.txt"
